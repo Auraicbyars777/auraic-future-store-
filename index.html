@@ -1,4 +1,107 @@
-auraic-future-store/
-├── index.html
-├── style.css
-└── script.js
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071426">
+  <meta name="description" content="AURAIC — Futuristic men's fashion. Discover your next style.">
+  <title>AURAIC | Future of Fashion</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <a class="logo" href="#">AURAIC<span>.</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">☰</button>
+    <nav id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#collection">Collection</a>
+      <a href="#about">About</a>
+      <button class="cart-button" id="cartButton">Cart <span id="cartCount">0</span></button>
+    </nav>
+  </header>  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">THE NEXT ERA OF STYLE</p>
+        <h1>WEAR THE<br><span>FUTURE.</span></h1>
+        <p class="hero-description">
+          Modern fits. Bold energy. Your identity, redefined.
+          Discover the next generation of men's fashion.
+        </p>
+        <a class="primary-button" href="#collection">EXPLORE COLLECTION ↗</a>
+        <div class="hero-stats">
+          <div><strong>01</strong><span>NEW GENERATION</span></div>
+          <div><strong>∞</strong><span>YOUR OWN STYLE</span></div>
+        </div>
+      </div>  <div class="hero-visual">
+    <div class="orbit orbit-one"></div>
+    <div class="orbit orbit-two"></div>
+    <div class="visual-card">
+      <span class="visual-label">AURAIC / FUTUREWEAR</span>
+      <div class="shirt">A<span>AURAIC</span></div>
+      <div class="visual-bottom">
+        <span>DESIGNED FOR<br>WHAT'S NEXT.</span>
+        <span>001 / 026</span>
+      </div>
+    </div>
+    <span class="floating-tag">FUTURE<br>IS NOW ↗</span>
+  </div>
+</section>
+
+<section class="ticker" aria-label="Brand statement">
+  <div>BUILT DIFFERENT ✳ MOVE FORWARD ✳ DEFINE YOUR AURA ✳ BUILT DIFFERENT ✳</div>
+</section>
+
+<section class="collection section" id="collection">
+  <div class="section-heading">
+    <div>
+      <p class="eyebrow">CURATED FOR YOU</p>
+      <h2>THE COLLECTION<span>.</span></h2>
+    </div>
+    <p>Everyday essentials.<br>Extraordinary energy.</p>
+  </div>
+
+  <div class="filter-row">
+    <span>MEN'S / 001</span>
+    <span>NEW ARRIVALS — COMING SOON</span>
+  </div>
+
+  <div class="product-grid" id="productGrid">
+    <article class="product-card placeholder-card">
+      <div class="product-image product-art-one"><span>A/01</span><div class="art-shirt">A</div></div>
+      <div class="product-info"><div><h3>Essential Tee</h3><p>Minimal / Everyday</p></div><strong>₹—</strong></div>
+      <p class="coming-soon">PRODUCT DROP COMING SOON</p>
+    </article>
+    <article class="product-card placeholder-card">
+      <div class="product-image product-art-two"><span>A/02</span><div class="art-hoodie">A</div></div>
+      <div class="product-info"><div><h3>Future Hoodie</h3><p>Streetwear / Relaxed</p></div><strong>₹—</strong></div>
+      <p class="coming-soon">PRODUCT DROP COMING SOON</p>
+    </article>
+    <article class="product-card placeholder-card">
+      <div class="product-image product-art-three"><span>A/03</span><div class="art-shirt alt-shirt">A</div></div>
+      <div class="product-info"><div><h3>Core Oversized</h3><p>Modern / Essential</p></div><strong>₹—</strong></div>
+      <p class="coming-soon">PRODUCT DROP COMING SOON</p>
+    </article>
+  </div>
+  <p class="demo-note">Preview designs only — real products and prices will be added later.</p>
+</section>
+
+<section class="manifesto section" id="about">
+  <p class="eyebrow">MORE THAN CLOTHING</p>
+  <h2>YOUR STYLE.<br><span>YOUR RULES.</span></h2>
+  <p>AURAIC brings together aura and iconic design. Built for people who don't follow the future — they define it.</p>
+  <a href="#collection" class="text-link">FIND YOUR STYLE ↗</a>
+</section>
+
+  </main>  <footer>
+    <a class="logo" href="#home">AURAIC<span>.</span></a>
+    <p>© <span id="year"></span> AURAIC. FUTURE IN EVERY THREAD.</p>
+    <a href="#home">BACK TO TOP ↑</a>
+  </footer>  <div class="cart-panel" id="cartPanel" aria-live="polite">
+    <button id="closeCart" class="close-cart" aria-label="Close cart">×</button>
+    <p class="eyebrow">YOUR SELECTION</p>
+    <h2>YOUR CART<span>.</span></h2>
+    <p>Your cart is waiting for the first product drop.</p>
+    <div class="cart-total">TOTAL <strong>₹0</strong></div>
+    <p class="cart-help">Products and ordering will be connected in a later step.</p>
+  </div>
+  <div class="overlay" id="overlay"></div>  <script src="script.js"></script></body>
+  </html>
