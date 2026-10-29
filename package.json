@@ -1,0 +1,20 @@
+{
+"name": "auraic-future-store",
+"version": "1.0.0",
+"private": true,
+"description": "AURAIC futuristic men's fashion store",
+"main": "server.js",
+"scripts": {
+"start": "node server.js"
+},
+"engines": {
+"node": "22.x"
+},
+"dependencies": {
+"bcryptjs": "^2.4.3",
+"better-sqlite3": "^11.10.0",
+"express": "^5.1.0",
+"express-session": "^1.18.2",
+"helmet": "^8.1.0"
+}
+}
